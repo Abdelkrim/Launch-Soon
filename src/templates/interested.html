@@ -1,0 +1,110 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>{{ OG_TITLE }}</title>
+<meta name="description" content="{{ OG_TITLE }}">
+<meta name="author" content="Abdelkrim BOUJRAF">
+<!-- <meta name="viewport" content="width=device-width"> 	-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet/less" href="less/style.less">
+<script src="js/libs/less-1.3.0.min.js"></script>
+<!-- Use SimpLESS (Win/Linux/Mac) or LESS.app (Mac) to compile your .less files
+		to style.css, and replace the 2 lines above by this one:
+
+		<link rel="stylesheet" href="less/style.css">
+		-->
+<meta property="og:title" content="{{ OG_TITLE }}">
+<meta property="og:type" content="{{ OG_TYPE }}">
+<meta property="og:url" content="{{ OG_URL }}">
+<meta property="og:image" content="{{ OG_IMAGE }}">
+<meta property="og:image:type" content="{{ OG_IMAGE_TYPE }}" />
+<meta property="og:image:width" content="{{ OG_IMAGE_WIDTH }}" />
+<meta property="og:image:height" content="{{ OG_IMAGE_HEIGHT }}" />
+<meta property="og:description" content="{{ OG_DESCRIPTION }}" />
+<meta property="og:site_name" content="{{ OG_SITE_NAME }}">
+<script src="js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+</head>
+<body>
+	<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse"
+					data-target=".nav-collapse"> <span class="icon-bar"></span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span>
+				</a> <a class="brand" href="#">{{ OG_SITE_NAME }}</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li class="active"><a href="#">Invite</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<!-- Main hero unit for a primary marketing message or call to action -->
+		<div class="row">
+			<div class="span4">&nbsp;</div>
+
+			<div class="span4 well">
+				<h1 style="text-align: center">
+					<b>P</b>aran <b>Y</b>o
+				</h1>
+				<p style="text-align: center">"The Pirate Bay" and "Megaupload"
+					are closed but WE can still save the planet! Don't copy anymore,
+					share items with family, friends or strangers.</p>
+				<p>
+				<form class="well">
+					<label><em>Enter your email below to take part of the
+							experience:</em></label> <input type="text" title="email@address.com"
+						value="email@address.com" autocorrect="off" autocapitalize="off"
+						id="email" class="span3"> <input type="submit"
+						name="submit" id="submit" title="GO" value="GO"
+						class="btn btn-primary btn-large">
+				</form>
+
+				</p>
+				<p>
+					<a class="btn btn-primary btn-large">Learn more &raquo;</a>
+				</p>
+				<p style="text-align: center">
+					Copyright &copy; 2012 - powered by <a href="http://www.alt-f1.be">Abdelkrim
+						BOUJRAF</a> and the <strong>ALT-F1 SPRL</strong> crew </em>
+				</p>
+			</div>
+
+
+		</div>
+
+	</div>
+	<!-- /container -->
+	<script
+		src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+		window.jQuery
+				|| document
+						.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')
+	</script>
+	<script src="js/libs/bootstrap/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+	<script>
+		var _gaq = [ [ '_setAccount', 'UA-XXXXX-X' ], [ '_trackPageview' ] ];
+		(function(d, t) {
+			var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+			g.src = ('https:' == location.protocol ? '//ssl' : '//www')
+					+ '.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g, s)
+		}(document, 'script'));
+	</script>
+</body>
+</html>

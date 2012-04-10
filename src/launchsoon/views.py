@@ -37,8 +37,7 @@ class MainPage(webapp.RequestHandler):
             'OG_SITE_NAME': OG_SITE_NAME,
         }
         
-        #path = os.path.join(os.path.dirname(__file__), '..', 'templates', 'index_launchrock.html')
-        path = os.path.join(os.path.dirname(__file__), '..', 'initializr', 'index.html')
+        path = os.path.join(os.path.dirname(__file__), '..', 'templates', 'index.html')
         self.response.out.write(template.render(path, template_values))
 
 class SignUp(webapp.RequestHandler):
