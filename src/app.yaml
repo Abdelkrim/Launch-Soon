@@ -24,6 +24,14 @@ handlers:
   static_dir: static/logo/
   expiration: "1h"
 
+- url: /js/
+  static_dir: initializr/js/
+  expiration: "1h"
+
+- url: /less/
+  static_dir: initializr/less/
+  expiration: "1h"
+  
 - url: /img/
   static_dir: static/img/
   expiration: "1h"

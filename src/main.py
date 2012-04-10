@@ -13,6 +13,7 @@ logging.info('Loading %s, app version = %s',
              __name__, os.getenv('CURRENT_VERSION_ID'))
 
 application = webapp.WSGIApplication([('/', MainPage),
+                                      ('/signup', SignUp),
                                       ], debug=True)
 
 def main():

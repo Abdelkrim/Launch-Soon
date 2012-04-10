@@ -14,34 +14,35 @@ from google.appengine.ext import webapp
 from google.appengine.api import users
 import urllib
 import os
+from settings import *
+ 
 from google.appengine.ext.webapp import template
 
-__all__ = ['MainPage', 
+__all__ = ['MainPage',
+           'SignUp',
            ]
 #Request handlers
 class MainPage(webapp.RequestHandler):
         
     def get(self):       
-        title = 'MainPage'
-        signin_signout_text = 'Sign in'
-        login_logout_url = users.create_login_url("/")
-        
-        user = users.get_current_user()
-        if user: 
-            owner_email = users.get_current_user().email()
-            signin_signout_text = 'Sign out'
-            login_logout_url = users.create_logout_url("/")
-        else:
-            owner_email = "guest user"
-            
         template_values = {
-            'title': title,
-            'owner_email': urllib.urlencode(''),
-            'login_logout_url': login_logout_url,
-            'signin_signout_text' : signin_signout_text ,
-            'nickname': owner_email,
+            'OG_TITLE' : OG_TITLE,
+            'OG_TYPE' : OG_TYPE,
+            'OG_URL' : OG_URL,
+            'OG_IMAGE' : OG_IMAGE,
+            'OG_IMAGE_TYPE' : OG_IMAGE_TYPE,
+            'OG_IMAGE_WIDTH' : OG_IMAGE_WIDTH,
+            'OG_IMAGE_HEIGHT' : OG_IMAGE_HEIGHT,
+            'OG_DESCRIPTION' : OG_DESCRIPTION,
+            'OG_SITE_NAME': OG_SITE_NAME,
         }
         
-        path = os.path.join(os.path.dirname(__file__), '..', 'templates', 'interested_launchrock.html')
+        #path = os.path.join(os.path.dirname(__file__), '..', 'templates', 'index_launchrock.html')
+        path = os.path.join(os.path.dirname(__file__), '..', 'initializr', 'index.html')
         self.response.out.write(template.render(path, template_values))
-            
+
+class SignUp(webapp.RequestHandler):
+    def post(self):
+        pass
+    def get(self):
+        pass  
