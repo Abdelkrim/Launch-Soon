@@ -1,1 +1,2 @@
 src/launchsoon/settings.py
+*.pyc
