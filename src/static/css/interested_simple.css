@@ -1,0 +1,260 @@
+@CHARSET "UTF-8";
+
+/*
+ * 	Author: Umair Ishtiaq
+ * 	Website: http://www.themeforest.net/user/iamumairkhan | www.iamumairkhan.co.cc
+ * 
+ *	CSS RESET
+ *	http://meyerweb.com/eric/tools/css/reset/ 
+ *	v2.0 | 20110126
+ *	License: none (public domain)
+ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {	margin: 0; 	padding: 0;	border: 0;	font-size: 100%;	font: inherit;	vertical-align: baseline;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1;}
+ol, ul { list-style: none;}
+blockquote, q {	quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table {	border-collapse: collapse; border-spacing: 0; }
+
+/** Fonts **/
+@font-face {
+    font-family: 'DroidSansRegular';
+    src: url('fonts/droidsans-webfont.eot');
+    src: url('fonts/droidsans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/droidsans-webfont.woff') format('woff'),
+         url('fonts/droidsans-webfont.ttf') format('truetype'),
+         url('fonts/droidsans-webfont.svg#DroidSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DroidSansBold';
+    src: url('fonts/droidsans-bold-webfont.eot');
+    src: url('fonts/droidsans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/droidsans-bold-webfont.woff') format('woff'),
+         url('fonts/droidsans-bold-webfont.ttf') format('truetype'),
+         url('fonts/droidsans-bold-webfont.svg#DroidSansBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/** Base Body Styles **/
+body{ background: #c3dde5; color: #15364a; font: 11px Arial, Helvetica, sans-serif;}
+
+h1,h2,h3,h4,h5,h6{ font-weight:bold; }
+h1{ font-size:30px;}
+h2{ font-size:24px;}
+h3{ font-size:18px;}
+h4{ font-size:14px;}
+h5{ font-size:12px;}
+h6{ font-size:10px;}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+ */
+::-moz-selection { background: #fff; color: #000; text-shadow: none; }
+::selection { background: #fff; color: #000; text-shadow: none; }
+
+
+/** Links **/
+a { color: #00e; }
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+a:hover, a:active { outline: 0; }
+
+
+/** Contain floats: h5bp.com/q **/
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+/************************************************************
+**                    Header Styles                        **
+*************************************************************/
+.header-wrapper { background: url(images/h-BG.png) repeat-x; border-bottom: 8px solid #d3e6ec; -webkit-box-shadow: inset 0px 0px 200px 0px rgba(0, 0, 0, 0.3); -moz-box-shadow: inset 0px 0px 200px 0px rgba(0, 0, 0, 0.3); box-shadow: inset 0px 0px 200px 0px rgba(0, 0, 0, 0.3); }
+header { width: 970px; margin: 0px auto; min-height: 482px; position: relative; }
+
+		  /* Social */
+		  header .social { position: absolute; top: 10px; right: 0px;}
+		  header .social { float: right; }
+		  header .social li { float: left; margin: 0px 0px 0px 10px; }
+		  header .social li a { width: 32px; height: 32px; display: block; font-size: 0px; line-height: 0px; }
+		  header .social li a.fb { background: url(images/facebook-sprites.png) top no-repeat; }
+		  header .social li a.tw { background: url(images/twitter-sprites.png) top no-repeat; }
+		  header .social li a.fb:hover { background: url(images/facebook-sprites.png) bottom no-repeat; }
+		  header .social li a.tw:hover { background: url(images/twitter-sprites.png) bottom no-repeat; }
+		  
+		  /* iPhone */
+		  header .phone { float: left; background: url(images/iphone.png) no-repeat; width: 385px; height: 415px; margin: 65px 0px 0px; }
+		  header .phone span { height: 283px; width: 324px; position: relative; display: block; margin: 132px 33px 0px; -webkit-box-shadow: inset 0px 0px 100px 0px rgba(255, 255, 255, 0.1); -moz-box-shadow: inset 0px 0px 100px 0px rgba(255, 255, 255, 0.1); box-shadow: inset 0px 0px 100px 0px rgba(255, 255, 255, 0.1); }
+		  header .phone .logo { position: absolute; top: 20px; left: 50%; margin-left: -67px; }
+		  header .phone .title { position: absolute; top: 200px; left: 50%; margin-left: -87px; }
+		  
+		  /* Data */
+		  header .data { width: 525px; float: right; margin: 40px 0px 0px; }
+		  header .data h1 { color: #fff; font: 48px 'DroidSansBold', Arial, Helvetica, sans-serif; margin: 0px 0px 70px; }
+		  header .data h1 span { display: block; margin: 0px 0px 0px 100px; letter-spacing: -3px; color: #899ba7; font-family: 'Myriad Pro', Arial, Helvetica, sans-serif; font-weight: bold; }
+		  header .data p { color: #899ba7; font: 12px/18px 'DroidSansRegular',Arial, Helvetica, sans-serif; width: 400px; float: left; margin: 15px 0px 0px; }
+		  header .data .price { text-align: center; float: right; overflow: hidden; position: relative; background: url(images/price-circle.png) no-repeat; width: 99px; height: 98px; }
+		  header .data .price strong { color: #fff; font: 24px/99px Arial, Helvetica, sans-serif; }
+		  header .data .price img { position: absolute; bottom: 0px; right: 0px; }
+		  
+		  /* Buttons */
+		  .buttons { margin: 40px 0px 0px; }
+		  button { font: bold 15px Calibri,Arial, Helvetica, sans-serif; color: #fff; padding: 0px 0px 0px 10px; }
+		  button.android { margin: 0px 40px 0px 0px; text-align: left; cursor: pointer; border: none; width: 191px; height: 52px; background: url(images/android-button.png) top no-repeat; color: #fff; }
+		  button.apple { text-align: left; cursor: pointer; border: none; width: 191px; height: 52px; background: url(images/iphone-button.png) top no-repeat; color: #fff; }
+		  button.android:hover { background-position: bottom; }
+		  button.apple:hover { background-position: bottom; }
+		  
+/************************************************************
+**                    Container Column Styles              **
+*************************************************************/
+.container { width: 970px; margin: 30px auto 0px; }
+#columns { margin: 10px 0px 38px; position: relative; z-index: 2; }
+#columns article { width: 304px; text-align: center; padding: 0px 14px 0px 0px; margin: 0px 14px 0px 0px; float: left; background: url(images/separator.png) right center no-repeat; }
+#columns article:last-child { margin: 0px 0px 0px; padding: 0px 0px 0px 0px; background: none; }
+#columns article.last { background: none; }
+/*#columns article .top { width: 304px; height: 9px; background: url(images/column-top.png) no-repeat; }
+#columns article .center { padding: 10px 20px; width: 264px; background: url(images/column-center.png); }
+#columns article .bottom { width: 304px; height: 10px; background: url(images/column-bottom.png) no-repeat; }*/
+#columns article h2 { text-shadow: 0px 1px 0px #fff; margin: 0px 0px 10px; color: #15364a; font: 40px 'DroidSansBold',Arial, Helvetica, sans-serif; }
+#columns article img { margin: 0px 0px 10px; }
+#columns article p { text-align: center; color: #15364a; font: 12px/20px 'DroidSansRegular',Arial, Helvetica, sans-serif; }
+#columns article p a { text-decoration: none; color: #15364a; font-weight: bold; }
+
+/************************************************************
+**                    Content Styles              		   **
+*************************************************************/
+.content { float: left; width: 450px; position: relative; z-index: 2; }
+.content article {}
+.content article h3 { margin: 0px 0px 30px; text-shadow: 0px 1px 0px #fff; padding: 0px 0px 0px 25px; color: #15364a; font: 26px 'DroidSansBold',Arial, Helvetica, sans-serif; background: url(images/heading-bullet.png) left center no-repeat; }
+.content article p { margin: 0px 0px 30px 60px; color: #213e50; font: 12px/18px 'DroidSansRegular',Arial, Helvetica, sans-serif; }
+.content article ul { margin: 0px 0px 30px 60px; }
+.content article li { color: #213e50; font: 12px/18px 'DroidSansRegular',Arial, Helvetica, sans-serif; background:  }
+.content article li span { margin: 0px 15px 0px 0px; }
+.content .buttons { margin: 0px 0px 30px; }
+
+/************************************************************
+**                    Slider Styles              		   **
+*************************************************************/
+.slider-wrapper { width: 618px; height: 508px; background: url(images/ipad.png) no-repeat; float: right; margin: -30px -80px 0px -98px; position: relative; z-index: 1; }
+.ie7 .slider-wrapper { margin: -30px -100px 0px 0px !important; }
+.slider-wrapper .slider { width: 440px; height: 300px; overflow: hidden; margin: 110px 0px 0px 80px; }
+.slider-wrapper .slider .slide { width: 418px; height: 278px; text-align: center; padding: 10px; /*transform: rotate(-7deg); -ms-transform: rotate(-7deg); -webkit-transform: rotate(-7deg); -o-transform: rotate(-7deg); -moz-transform: rotate(-7deg);*/  }
+.ie7 .slider-wrapper .slider .slide { background: none !important; }
+.ie8 .slider-wrapper .slider .slide { background: none !important; }
+.slider-wrapper .slider .slide p { color: #899ba7; font: 12px/18px Arial, Helvetica, sans-serif; }
+.slider-wrapper .slider .slide h4 { color: #899ba7; font: 16px/24px 'DroidSansBold',Arial, Helvetica, sans-serif; }
+.slider-wrapper .slider-controls { position: absolute; bottom: 30px; right: 80px; }
+.slider-wrapper .slider-controls a { width: 46px; height: 46px; display: inline-block; font-size: 0px; line-height: 0px; cursor: pointer; }
+.slider-wrapper .slider-controls .prev-slide { background: url(images/slider-controls.png) left center no-repeat; }
+.slider-wrapper .slider-controls .next-slide { background: url(images/slider-controls.png) right center no-repeat; }
+.slider-wrapper .slider-controls .prev-slide:hover { background: url(images/slider-controls-hovers.png) left center no-repeat; }
+.slider-wrapper .slider-controls .next-slide:hover { background: url(images/slider-controls-hovers.png) right center no-repeat; }
+.slider-wrapper .price-wrapper { position: absolute; bottom: 200px; left: -35px; }
+.slider-wrapper .price { text-align: center; overflow: hidden; position: relative; background: url(images/price-circle.png) no-repeat; width: 99px; height: 98px; }
+.slider-wrapper .price strong { top: 100px; left: 10px; color: #fff; font: 24px/99px Arial, Helvetica, sans-serif; }
+.slider-wrapper .price img { position: absolute; bottom: 0px; right: 0px; }
+
+/************************************************************
+**                    Brand Styles              		   **
+*************************************************************/
+.brands { margin: 0px 0px 50px; }
+.brands ul { border-bottom: 1px dotted #aeaeae; border-top: 1px dotted #aeaeae; padding: 20px 0px; }
+.brands h3 { margin: 0px 0px 30px; text-shadow: 0px 1px 0px #fff; padding: 0px 0px 0px 25px; color: #15364a; font: 26px 'DroidSansBold',Arial, Helvetica, sans-serif; background: url(images/heading-bullet.png) left center no-repeat; }
+.brands li { float: left; margin: 0px 55px 0px 0px; }
+.brands li:last-child { margin: 0px 0px 0px 0px; }
+.brands li img { verticle-align: middle; height: 70px; }
+.brands li img:hover { -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)"; filter: alpha(opacity=30); opacity: 0.3; }
+
+/************************************************************
+**                    Testimonial Styles              	   **
+*************************************************************/
+#testimonial { margin: 30px 0px 30px; }
+#testimonial h3 { margin: 0px 0px 30px; text-shadow: 0px 1px 0px #fff; padding: 0px 0px 0px 25px; color: #15364a; font: 26px 'DroidSansBold',Arial, Helvetica, sans-serif; background: url(images/heading-bullet.png) left center no-repeat; }
+#testimonial article { width: 304px; text-align: justify; margin: 0px 28px 0px 0px; float: left; position: relative; }
+#testimonial article:last-child { margin: 0px; }
+#testimonial article p { color: #213e50; font: italic 12px/18px 'DroidSansRegular',Arial, Helvetica, sans-serif; }
+#testimonial article cite { color: #7f8e98; font: 12px/18px 'DroidSansRegular',Arial, Helvetica, sans-serif; }
+/*#testimonial article .lqout { background: url(images/qoute.png) no-repeat; width: 28px; height: 22px; display: inline-block; position: absolute; top: -10px; left: -10px; }
+#testimonial article .rqout { background: url(images/qoute.png) no-repeat; width: 28px; height: 22px; display: inline-block; position: absolute; bottom: -10px; right: -10px; }*/
+#testimonial article .top { width: 304px; height: 9px; background: url(images/column-top.png) no-repeat; }
+#testimonial article .center { padding: 10px 20px 20px; width: 264px; background: url(images/column-center.png); }
+#testimonial article .bottom { width: 304px; height: 10px; background: url(images/column-bottom.png) no-repeat; }
+#testimonial article p.author { font: 10px/18px 'DroidSansRegular',Arial, Helvetica, sans-serif; text-align: right; margin: 20px 0px 0px; color: #7f8e98; }
+#testimonial article p.image { line-height: 50px !important; text-align: center; }
+
+/************************************************************
+**                    Contact Styles              	       **
+*************************************************************/
+#bottom { margin: 0px 0px 10px; }
+#bottom section { float: left; }
+#bottom section h3 { margin: 0px 0px 30px; text-shadow: 0px 1px 0px #fff; padding: 0px 0px 0px 25px; color: #15364a; font: 26px 'DroidSansBold',Arial, Helvetica, sans-serif; background: url(images/heading-bullet.png) left center no-repeat; }
+#bottom section h4 {  margin: 0px 0px 30px;  padding: 0px 0px 0px 25px; color: #15364a; font: 18px Arial, Helvetica, sans-serif; }
+
+#bottom section address ul { padding: 0px 0px 0px 25px; float: left; }
+#bottom section address ul li { padding: 0px 0px 0px 40px; margin: 0px 0px 10px; color: #213e50; font: 12px/32px 'DroidSansRegular',Arial, Helvetica, sans-serif; }
+#bottom section address ul li.phone { background: url(images/phone.png) left center no-repeat; color: #0c386a; font: 24px/32px 'DroidSansBold',Arial, Helvetica, sans-serif; }
+#bottom section address ul li.mail { background: url(images/mail.png) left center no-repeat; }
+#bottom section address ul li.login { background: url(images/skype.png) left center no-repeat; }
+
+#bottom .links ul { padding: 0px 0px 0px 25px; }
+#bottom .links ul li { margin: 0px 0px 10px; color: #213e50; font: 12px 'DroidSansRegular',Arial, Helvetica, sans-serif; }
+#bottom .links ul li a { color: #213e50; }
+#bottom .links ul li span { margin: 0px 15px 0px 0px; }
+
+#bottom .subscribe-form { position: relative; }
+#bottom .subscribe-form p { font: 11px/16px 'DroidSansRegular',Arial, Helvetica, sans-serif; color: #728d9a; margin: 0px 0px 30px; }
+#bottom .subscribe-form fieldset { position: relative; }
+#bottom .subscribe-form input.email { font: 11px/20px Arial, Helvetica, sans-serif; color: #728d9a; border: none; outline: none; padding: 10px; width: 254px; height: 25px; background: url(images/input-long.png) no-repeat; }
+#bottom .subscribe-form input.submit { padding: 0px 0px 0px 10px; cursor: pointer; text-align: left; font: bold 12px Calibri,Arial, Helvetica, sans-serif; color: #fff; float: right; width: 107px; height: 45px; background: url(images/subscribe-btn.png) top no-repeat; border: none; outline: none; }
+#bottom .subscribe-form input.submit:hover { background: url(images/subscribe-btn.png) bottom no-repeat; } 
+#bottom .subscribe-form label.error { position: absolute; right: 140px; bottom: 12px; background: url(images/error.png) no-repeat; width: 24px; height: 24px; font-size: 0px; line-height: 0px; }
+
+#bottom .subscribe-form .respond { background: #c3dde5; color: #000; display: none; position: absolute; width: 400px; height: 110px; top: 0px; left: 0px; text-align: center; }
+#bottom .subscribe-form .respond p { text-align: center; color: #213e50; font: 12px/16px 'DroidSansRegular',Arial, Helvetica, sans-serif; }
+#bottom .subscribe-form .respond #contact-loader { display: none; position: absolute; top: 0px; }
+#bottom .subscribe-form .respond #message-sent { display: none; position: absolute; top: 20px; }
+#bottom .subscribe-form .respond #message-sent strong { color: #32679d; display: block; font: 14px/18px 'DroidSansBold',Arial, Helvetica, sans-serif; }
+
+#bottom section.contact { width: 270px; margin: 0px 15px 0px 0px; }
+#bottom section.links { width: 270px; margin: 0px 15px 0px 0px; }
+#bottom section.form { width: 400px; }
+
+/************************************************************
+**                    Footer Styles              	       **
+*************************************************************/
+.footer-wrapper { background: url(images/footer-bg.png); border-top: 5px solid #cfe4ea; }
+footer { width: 970px; margin: 0px auto; }
+
+		  /* Social */
+		  footer .social { float: left; }
+		  footer .social li { float: left; margin: 10px 0px 0px 10px; }
+		  footer .social li a { width: 32px; height: 32px; display: block; font-size: 0px; line-height: 0px; }
+		  footer .social li a.fb { background: url(images/facebook-sprites.png) top no-repeat; }
+		  footer .social li a.tw { background: url(images/twitter-sprites.png) top no-repeat; }
+		  footer .social li a.fb:hover { background: url(images/facebook-sprites.png) bottom no-repeat; }
+		  footer .social li a.tw:hover { background: url(images/twitter-sprites.png) bottom no-repeat; }
+		  
+		  /* Right Content */
+		  footer .right-content { float: right; }
+		  footer .right-content p { color: #8596a0; font: 12px/50px 'DroidSansRegular',Arial, Helvetica, sans-serif; }
+		  footer .right-content p a { font-style: italic; color: #8596a0; text-decoration: none; }
+		  footer .right-content .logo { float: left; margin: 20px 10px 0px 0px; }
+		  footer .right-content .copyright { float: right; }
+		  
+
+/************************************************************
+**                    IE Fixes                 	           **
+*************************************************************/
+.last { margin-right: 0px !important; padding: 0px !important; }

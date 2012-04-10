@@ -1,0 +1,36 @@
+application: paran-yo-launchsoon
+version: 1
+runtime: python
+api_version: 1
+
+ 
+handlers:
+
+- url: /css/
+  static_dir: static/css/
+  expiration: "1h"
+  
+- url: /favicon\.ico
+  static_files: static/ico/favicon.ico
+  upload: static/ico/favicon\.ico
+  expiration: "6d"
+
+- url: /apple-touch-icon\.png
+  static_files: static/ico/apple-touch-icon.ong
+  upload: static/ico//apple-touch-icon\.png
+  expiration: "6d"
+
+- url: /logo/
+  static_dir: static/logo/
+  expiration: "1h"
+
+- url: /img/
+  static_dir: static/img/
+  expiration: "1h"
+   
+- url: /.*
+  script: main.py
+
+builtins:
+- datastore_admin: on
+- appstats: on
