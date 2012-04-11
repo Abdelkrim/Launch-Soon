@@ -1,30 +1,32 @@
 {% extends "base.html" %}
 {% block navbar %} {% include "navbar.html" %} {% endblock %}
 
-{% block body %} <!-- Main hero unit for a primary marketing message or call to action -->
+{% block body %}
 <div class="row">
 	<div class="span4 well offset4">
 		<h1 style="text-align: center">Paran Yo </h1>
 		<p style="text-align: center">
 			"The Pirate Bay" and "Megaupload" are closed but WE can still save
 			the planet!
-			<br />
+		</p>
+		<p style="text-align: center">
 			Don't copy anymore, share items with family,
-			friends or strangers.
+			friends, fools, neighbor, aliens or strangers.
 		</p>
 		<form action="/signup" method="post" class="well">
 			<label><em>Take part of the experience and input your
 				email:</em></label>
-			<input type="text" name="email" class="span3"
-			placeholder="email@address.com" id="email">
-			
-			<input
-			type="submit" name="submit" id="submit" title="GO" value="GO"
-			class="btn btn-primary btn-large">
-			<span class="help-inline">We do not spam!</span>
+			<fieldset>
+				<input type="text" name="email" class="span3"
+				placeholder="email@address.com" id="email">
+				<input
+				type="submit" name="submit" id="submit" title="GO" value="GO"
+				class="btn btn-primary btn-large">
+				<span class="help-inline">We do not spam!</span>
+			</fieldset>
 		</form>
 		<p style="text-align: center">
-			<a class="btn btn-primary btn-large">Learn more &raquo;</a>
+			<a class="btn btn-large btn-primary"> <i class="icon-info-sign icon-white"></i> Learn more &raquo;</a>
 		</p>
 		<p style="text-align: center">
 			Copyright &copy; 2012 - powered by <a href="http://www.alt-f1.be">Abdelkrim
