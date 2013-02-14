@@ -6,17 +6,14 @@
 	<div class="span4 offset4" style="background: black">
 		<h1 style="text-align: center; color:white">Paran Yo </h1>
 		<p style="text-align: center; color:white">
-			"The Pirate Bay" and "Megaupload" are closed but WE can still save
-			the planet!
+			Invite as many friends as you want, your friends 
 		</p>
-		<p style="text-align: center; color:white">
-			Don't copy anymore, share items with family,
-			friends, fools, neighbor, aliens or strangers.
-		</p>
-		<form action="/signup" method="post" class="well" style="color:white;background:black">
-			<label><em><span style="; color:white"> Take part of the experience and input your
+		
+		<form action="/invitefriend" method="post" class="well" style="color:white;background:black">
+			<label><em><span style="; color:white"> Allow you friend to take part of the experience and input his/her
 				email:</span></em></label>
 			<fieldset>
+				<input type="hidden" name="guest" value="{{ guest }}">
 				<input type="text" name="email" class="span3"
 				placeholder="email@address.com" id="email">
 				<input
